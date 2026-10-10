@@ -1,0 +1,18 @@
+{
+  "name": "translation-key-helper",
+  "version": "0.1.0",
+  "description": "Generate Kuril i18n keys and concise English and Thai translations from Chinese copy, screenshots, or UI context.",
+  "author": {
+    "name": "Local developer"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Translation Key Helper",
+    "shortDescription": "Generate Kuril translation keys and translations.",
+    "longDescription": "Infer UI type and product module, generate concise keys, translate to English and Thai, preserve {n}, and flag likely duplicates.",
+    "developerName": "Kuril Translation Key Helper",
+    "category": "Productivity",
+    "capabilities": [],
+    "defaultPrompt": "Generate a Kuril key, English translation, and Thai translation for this copy. Infer the UI type from the context."
+  }
+}
