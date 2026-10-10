@@ -1,0 +1,27 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "translation-key-helper",
+  "version": "0.1.0",
+  "description": "Generate Kuril i18n keys and concise English and Thai translations from Chinese copy, screenshots, or UI context.",
+  "author": {
+    "name": "Kuril Translation Key Helper"
+  },
+  "license": "MIT",
+  "keywords": ["i18n", "translation", "kuril", "localization"],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Translation Key Helper",
+        "shortDescription": "Generate Kuril translation keys and translations.",
+        "longDescription": "Infer UI type and product module, generate concise keys, translate to English and Thai, preserve {n}, and flag likely duplicates.",
+        "developerName": "Kuril Translation Key Helper",
+        "category": "Productivity",
+        "capabilities": ["Key generation", "English translation", "Thai translation", "Duplicate checks"],
+        "defaultPrompt": [
+          "Generate a key and English and Thai translations for this Chinese copy.",
+          "Classify this copy as a button, title, Toast, Tips, Tag, Placeholder, or Empty state."
+        ]
+      }
+    }
+  }
+}
