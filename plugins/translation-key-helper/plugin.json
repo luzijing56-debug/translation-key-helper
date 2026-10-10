@@ -1,25 +1,35 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "translation-key-helper",
-  "version": "0.1.0",
-  "description": "Generate Kuril i18n keys and concise English and Thai translations from Chinese copy, screenshots, or UI context.",
+  "version": "0.2.0",
+  "description": "Check the live Kuril i18n library, review reuse and missing keys in two confirmation stages, then save, verify, and release approved translations.",
   "author": {
     "name": "Kuril Translation Key Helper"
   },
   "license": "MIT",
-  "keywords": ["i18n", "translation", "kuril", "localization"],
+  "keywords": [
+    "i18n",
+    "translation",
+    "kuril",
+    "localization"
+  ],
   "extensions": {
     "com.openai": {
       "interface": {
         "displayName": "Translation Key Helper",
-        "shortDescription": "Generate Kuril translation keys and translations.",
-        "longDescription": "Infer UI type and product module, generate concise keys, translate to English and Thai, preserve {n}, and flag likely duplicates.",
+        "shortDescription": "Review, confirm, and publish Kuril translation keys.",
+        "longDescription": "Check live duplicates, follow verified Kuril classification patterns, obtain two user confirmations, then save, verify, and release approved Chinese, English, and Thai entries.",
         "developerName": "Kuril Translation Key Helper",
         "category": "Productivity",
-        "capabilities": ["Key generation", "English translation", "Thai translation", "Duplicate checks"],
+        "capabilities": [
+          "Live duplicate checks",
+          "Classification evidence",
+          "English and Thai translations",
+          "Two-stage review",
+          "Approved write and release"
+        ],
         "defaultPrompt": [
-          "Generate a key and English and Thai translations for this Chinese copy.",
-          "Classify this copy as a button, title, Toast, Tips, Tag, Placeholder, or Empty state."
+          "Review this design or document against Kuril. Show reusable keys and missing copy for my first confirmation, then propose missing keys with translations and classification evidence for my second confirmation before saving and releasing."
         ]
       }
     }
