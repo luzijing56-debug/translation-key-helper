@@ -1,18 +1,18 @@
 {
   "name": "translation-key-helper",
-  "version": "0.1.0",
-  "description": "Generate Kuril i18n keys and concise English and Thai translations from Chinese copy, screenshots, or UI context.",
+  "version": "0.2.0",
+  "description": "Check the live Kuril i18n library, review reuse and missing keys in two confirmation stages, then save, verify, and release approved translations.",
   "author": {
     "name": "Local developer"
   },
   "skills": "./skills/",
   "interface": {
     "displayName": "Translation Key Helper",
-    "shortDescription": "Generate Kuril translation keys and translations.",
-    "longDescription": "Infer UI type and product module, generate concise keys, translate to English and Thai, preserve {n}, and flag likely duplicates.",
+    "shortDescription": "Review, confirm, and publish Kuril translation keys.",
+    "longDescription": "Check live duplicates, follow verified Kuril classification patterns, obtain two user confirmations, then save, verify, and release approved Chinese, English, and Thai entries.",
     "developerName": "Kuril Translation Key Helper",
     "category": "Productivity",
     "capabilities": [],
-    "defaultPrompt": "Generate a Kuril key, English translation, and Thai translation for this copy. Infer the UI type from the context."
+    "defaultPrompt": "Review this design or document against Kuril. Show reusable keys and missing copy for my first confirmation, then propose missing keys with translations and classification evidence for my second confirmation before saving and releasing."
   }
 }
